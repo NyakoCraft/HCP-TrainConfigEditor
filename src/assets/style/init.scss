@@ -147,6 +147,7 @@ p {
     font-size: 16px;
     font-weight: bold;
     padding-bottom: 4px;
+    border-radius: 5px;
     border-bottom: 1px solid #e4e7ed;
     display: flex;
     justify-content: space-between;
@@ -351,7 +352,7 @@ p {
 .header-bg-1 {
   border-color: #e4e7ed;
   .tip {
-    padding: 0 2px;
+    padding: 0 5px;
     background-color: transparent;
   }
 }
@@ -359,42 +360,42 @@ p {
 .header-bg-2 {
   border-color: #99ccff;
   .tip {
-    padding: 0 2px;
+    padding: 0 5px;
     background-color: #99ccff;
   }
 }
 .header-bg-3 {
   border-color: #ccccff;
   .tip {
-    padding: 0 2px;
+    padding: 0 5px;
     background-color: #ccccff;
   }
 }
 .header-bg-4 {
   border-color: #ffcc99;
   .tip {
-    padding: 0 2px;
+    padding: 0 5px;
     background-color: #ffcc99;
   }
 }
 .header-bg-5 {
   border-color: #ffcccc;
   .tip {
-    padding: 0 2px;
+    padding: 0 5px;
     background-color: #ffcccc;
   }
 }
 .header-bg-6 {
   border-color: #ccffcc;
   .tip {
-    padding: 0 2px;
+    padding: 0 5px;
     background-color: #ccffcc;
   }
 }
 .header-bg-7 {
   border-color: #99cccc;
   .tip {
-    padding: 0 2px;
+    padding: 0 5px;
     background-color: #99cccc;
   }
 }

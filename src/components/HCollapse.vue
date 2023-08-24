@@ -43,7 +43,9 @@
             ></el-button>
           </div>
         </template>
-        <slot></slot>
+        <div class="collapse-body">
+          <slot></slot>
+        </div>
       </el-collapse-item>
     </el-collapse>
   </HBlock>
@@ -160,10 +162,18 @@ export default {
 <style lang="scss" scoped>
 .topbar-bg-orange {
   ::v-deep .el-collapse .el-collapse-item .el-collapse-item__header {
+    border-radius: 5px 5px 0px 0px;
     background: $tabColor;
   }
   ::v-deep .el-collapse-item.is-disabled .el-collapse-item__header {
+    border-radius: 5px;
     color: rgba(255, 255, 255, 0.7);
+  }
+  ::v-deep .collapse-body .block-style {
+    border-radius: 0px 0px 5px 5px;
+    .block-style {
+      border-radius: 5px;
+    }
   }
 }
 

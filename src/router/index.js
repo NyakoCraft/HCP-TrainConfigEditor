@@ -7,7 +7,7 @@ const routes = [
   {
     path: '/',
     name: 'home',
-    component: () => import('../views/HCPMain/index.vue')
+    component: () => import('../views/index.vue')
   }
 ];
 

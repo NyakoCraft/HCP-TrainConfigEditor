@@ -44,7 +44,51 @@ export const karras_schedulers = [
   'diffusers.LMSDiscreteScheduler'
 ];
 
-export const pretrained_model_name_or_path_options = [];
+export const default_prompt_templates = [
+  {
+    label: 'caption.txt',
+    value: 'prompt_tuning_template/caption.txt'
+  },
+  {
+    label: 'name.txt',
+    value: 'prompt_tuning_template/name.txt'
+  },
+  {
+    label: 'name_2pt_caption.txt',
+    value: 'prompt_tuning_template/name_2pt_caption.txt'
+  },
+  {
+    label: 'name_caption.txt',
+    value: 'prompt_tuning_template/name_caption.txt'
+  },
+  {
+    label: 'object.txt',
+    value: 'prompt_tuning_template/object.txt'
+  },
+  {
+    label: 'object_caption.txt',
+    value: 'prompt_tuning_template/object_caption.txt'
+  },
+  {
+    label: 'style.txt',
+    value: 'prompt_tuning_template/style.txt'
+  },
+  {
+    label: 'style_caption.txt',
+    value: 'prompt_tuning_template/style_caption.txt'
+  }
+];
+
+export const default_pretrained_model_options = [
+  {
+    label: 'stable-diffusion-v1-5',
+    value: 'runwayml/stable-diffusion-v1-5'
+  },
+  {
+    label: 'stable-diffusion-v1-4',
+    value: 'CompVis/stable-diffusion-v1-4'
+  }
+];
 
 export const default_generate_data = {
   // 文本输入

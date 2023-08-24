@@ -7,7 +7,13 @@
       <span v-else :class="required && 'is-required'">{{ label }}</span>
     </p>
     <div class="select-wrap">
-      <el-select v-model="val" placeholder="请选择" @change="handleOnChange">
+      <el-select
+        :filterable="filterable"
+        :allow-create="allowCreate"
+        v-model="val"
+        placeholder="请选择"
+        @change="handleOnChange"
+      >
         <el-option
           v-for="item in options"
           :key="item.value"
@@ -30,6 +36,14 @@ import { getPropertyByPath } from '@/utils/index.js';
 export default {
   name: 'HConfigSelect',
   props: {
+    filterable: {
+      type: Boolean,
+      default: false
+    },
+    allowCreate: {
+      type: Boolean,
+      default: false
+    },
     options: {
       type: Array,
       default: () => []

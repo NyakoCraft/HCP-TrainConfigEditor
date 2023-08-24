@@ -39,7 +39,7 @@ export default defineStore('sn', {
       this.dataset_sn = sn;
       localStorage.setItem('dataset_sn', sn);
     },
-    setTrainSnSn(sn) {
+    setTrainSn(sn) {
       this.train_sn = sn;
       localStorage.setItem('train_sn', sn);
     }

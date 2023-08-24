@@ -3,7 +3,16 @@ import { defineStore } from 'pinia';
 import { getGenerateDir } from '@/api/file';
 export default defineStore('common', {
   state: () => ({
-    pretrained_model: []
+    pretrained_model: [
+      {
+        label: 'stable-diffusion-v1-5',
+        value: 'runwayml/stable-diffusion-v1-5'
+      },
+      {
+        label: 'stable-diffusion-v1-4',
+        value: 'CompVis/stable-diffusion-v1-4'
+      }
+    ]
   }),
   getters: {
     pretrained_model_options() {
